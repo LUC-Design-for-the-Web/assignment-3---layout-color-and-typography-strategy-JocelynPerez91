@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Strategy for building website">
+    <meta name="keywords" content="layout, color scheme, theme, typography">
+    <meta name="author" content="Jocelyn Perez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!--
+            How did you decide on your site’s color scheme?
+            I decided on the color scheme that I did based on how it easy it allows the words to be read as well as how it coordinated with the pictures I had chosen.
+        Provide me with the color palette you will use within your site and provide the hexadecimals values for each color.
+            I used linear gradient red(#FF0000) to black(000000) for the body and black to red for the container to allow contrast and help make the container visable for this assignment.
+        What areas of your site will be impacted by your color choice? Be descriptive in identifying where the various colors in your color palette will be depicted.
+            I think the color choices impact all areas of my site. Without using specific colors and their contrasts thing such as the search section would be seen or the filter aspect wouldn't be visible then impacting the user experience of the site
+            -->
+        <!--What font(s) will you use for the <body>(default declarations), <p> and <h1> - <h6>(Your individual project must incorporate at least 3 levels of headings.)HTML tags? A CSS comment will also be be placed above each style rule that has the font or font-family property.
+                I will be using Segoe Print as well as Script MT throughout the site. I made these choice because I believe they go with the flow of the site, as well as the overall "vibe" of the site and something the target audience would like.
+            What are the different weights and sizes of the heading and paragraph tags?
+                The sizes and weights of the headers are bolder and bigger than the paragraph writing because they need to standout to draw the users eye to help them know how to navigate the site.
+            What is your desired line-height, word-spacing, and letter-spacing?
+                I want all the texts for the site to be centered, with the spacing between words/letters to be far enough apart that there isn't any confusion as to what the words actually say.  
+        -->
+   <style>
+
+        h1{
+            color: white;
+            text-align: center;
+            font-family: Script MT;
+        }
+        h2{
+            color: white;
+            text-align: left;
+            font-family: Segoe Print;
+            font-size: small;
+        }
+        h3{
+            color: white;
+            text-align: right;
+            font-family: Segoe Print; 
+            font-size: small;
+        }
+        
+        .item1 { grid-area: header; }
+        .item2 { grid-area: left; }
+        .item3 { grid-area: right; }
+        
+
+        body{
+            background-image: linear-gradient(red, black);
+        }
+     
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+            'header header header header header header'
+            'left left left right right right';
+            gap: 10px;
+            background-image: linear-gradient(black, red);
+            padding: 10px;
+        }
+        .grid-container> div {
+            text-align: center;
+            padding:20px 0;
+            font-size: large;
+            color: white;
+            font-family: Script MT;
+        }
+        footer{
+            text-align: left;
+            color: white;
+            font-size: small;
+            font-family: Segoe Print;
+        }   
+    </style>
+</head>
+<body>
+    <h1>Coming Soon</h1>
+    <h2>Search</h2>
+    <h3>Filters</h3>
+    <div class="grid-container">
+        <div class="item1">Placeholder for listed out events</div>
+        <div class="item2">Placeholder for Images</div>    
+        <div class="item3">Placeholder for Images</div>
+
+    </div>
+</body>
+<footer>Placeholder for Social Media/Contact Info</footer>
+</html>
